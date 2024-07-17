@@ -1,0 +1,99 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+/* Container for the entire popup */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title styling */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+/* Container for the bookmarks list */
+.bookmarks {
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Individual bookmark styling */
+.bookmark {
+    padding: 8px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookmark:last-child {
+    border-bottom: none;
+}
+
+.bookmark-title {
+    flex: 1;
+}
+
+.bookmark-controls img {
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.bookmark-controls img:hover {
+    opacity: 1;
+}
+
+/* Footer section */
+.footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Row styling for no bookmarks message */
+.row {
+    font-style: italic;
+    color: #888;
+    padding: 10px;
+    text-align: center;
+}
